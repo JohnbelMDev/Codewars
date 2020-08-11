@@ -3,7 +3,6 @@ function findOdd(A) {
   A.forEach(function(number){
     console.log(number);
     if(number.toString() in obj_of_numbers){ //check if there is an existing number in object already
-      console.log(`INSIDE object ${obj_of_numbers[number.toString()]}`)
         obj_of_numbers[number.toString()] = obj_of_numbers[number.toString()] + 1 //add 1 more to the count
     }else{ //if number does not exist yet
         obj_of_numbers[number.toString()] =  1
