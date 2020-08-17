@@ -5,5 +5,6 @@ function multiply(a, b){
   var product;
   product = a * b;
   return product;
+  console.log(product);
 
 }
