@@ -1,13 +1,12 @@
+// define function
+
 function areYouPlayingBanjo(name) {
-
-  if(name[0]==="R" || name[0].toLowerCase() === ‘r’)
-    {
-      name="plays banjo";
-
-
-    }
-  else{
-    name="does not play banjo";
-   return name;
-    }
+  // check to see if the first index is equal to r
+  if (name[0].toLowerCase() === 'r') {
+    return name + ' plays banjo';
+  }
+  // set a default if the first statement is not true
+  else {
+    return name + ' does not play banjo';
+  }
 }
