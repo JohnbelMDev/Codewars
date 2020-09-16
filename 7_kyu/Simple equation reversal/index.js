@@ -1,4 +1,4 @@
 function solve(eq){
     //..
-  eq.reverse()
+    return eq.split(/([*+-/])/).reverse().join("");
 }
