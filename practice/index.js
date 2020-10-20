@@ -15,7 +15,7 @@
 // console.log(arr);
 //
 
-let arr = [13,8,12,13,12,12,44];
+let arr = [13,8,12,13,12,132,44];
 
 
 function sortNumber(a, b) {
