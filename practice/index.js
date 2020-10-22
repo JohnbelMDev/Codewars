@@ -15,38 +15,31 @@
 // console.log(arr);
 //
 
-let arr = [13,8,12,13,12,1344332,44];
 
+// implementing the comparing function
 
-function sortNumber(a, b) {
+function comparing(a, b) {
+  console.log("now comparing",a,b);
   if (a > b) return 1;
   if (a == b) return 0;
   if (a < b) return -1;
 }
 
-function test(){
+function test(arr){
    // arr = [  arr = [ 12,4,1 ]; ];
    // first sort the number from lowest to highest
-  arr.sort(sortNumber);
+  arr.sort(comparing);
   // then use the shift method to take out the first index
   arr.shift();
   // reverse the value inside the array from biggest to highest
-  arr.reverse();
+  // arr.reverse();
+
   // then take out the first index of the array
-  arr.shift();
+  // arr.shift();
+  // removing the last element inside the array
+  arr.pop();
+  console.log(arr);
   // using the reduce function to adds up the rest of the element inside the array
   let result = arr.reduce((sum, current) => sum + current);
   return result;
 }
-
-// arr.sort(compareNumeric);
-// arr.shift(compareNumeric);
-// arr.reverse(compareNumeric);
-// arr.shift(compareNumeric);
-// let result = arr.reduce((sum, current) => sum + current);
-
- console.log(test());
-//
-// function sumarray(arr){
-//
-// }
