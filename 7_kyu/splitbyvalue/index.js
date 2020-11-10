@@ -5,6 +5,6 @@ function splitByValue(k, elements){
   let value2 = elements.filter(words => words >=k)
   console.log(value,value2 )
 
-
+console.log("hii");
   return (value.concat(value2))
 }
