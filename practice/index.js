@@ -1,9 +1,21 @@
-function test(num)
-{
-  let temp = num.toString().split('').reverse().join('')
+// is isannagram is a number that is the same k
 
-  return parseInt(temp)
+
+function isannagram (string, string2){
+   return formatst (string) === formatst(string2)
+
+  function formatst(str){
+    return str
+    .replace(/[^\w]/g,'')
+    .toLowerCase()
+    .split('')
+    .sort()
+    .join('');
+
+  }
+
 }
 
 
-console.log(test(1243));
+
+console.log(isannagram("elbow" ,"below"));
