@@ -11,5 +11,5 @@ function solution(nums){
 }
 
 
-console.log(solution([]));
+console.log(solution([1,23,4]));
 // console.log(solution());
