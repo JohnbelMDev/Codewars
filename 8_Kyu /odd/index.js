@@ -1,4 +1,4 @@
 function odds(values){
-  // arrow it
+  // using filter to filter the even numbers
   return values.filter( (x)=>  x % 2 !==0);
 }
