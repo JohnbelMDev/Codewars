@@ -18,13 +18,14 @@ function typist(s){
   //coding and coding..
    let splitString = s.split('')
    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+
    // console.log(alphabet);
    let count = 0;
    let uppCase = 1;
 
   for (var i = 0; i < splitString.length; i++) {
     count+=1
-    if(alphabet.includes(splitString[i])){
+    if(alphabet.includes(splitString[i]) || ){
       console.log(splitString[i])
       uppCase+=1
     }
