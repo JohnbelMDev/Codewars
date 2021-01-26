@@ -14,28 +14,47 @@
 //AA => 3
 
 
+  function checkUpperCase(letter){
+       let splitUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+       let letterSplit = letter.split('')
+        let cap =1;
+        var z;
+        let i;
+        for (i=0; i < splitUpperCase.length; i++) {
+         for (z=0; z < letterSplit.length; z++) {
+            if (splitUpperCase[i] === letterSplit[z]) {
+              cap+=letterSplit[z].length
+
+            }
+         }
+        }
+        return cap
+  }
+
+
+  function checkLowerCase(letter){
+       let splitLowerCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase().split('')
+       let letterSplit = letter.split('')
+        let count = 0;
+        var z;
+        let i;
+        for (i=0; i < splitLowerCase.length; i++) {
+         for (z=0; z < letterSplit.length; z++) {
+            if (splitLowerCase[i] === letterSplit[z]) {
+              count++
+
+            }
+         }
+        }
+    return count
+  }
+
 function typist(s){
   //coding and coding..
-   let splitString = s.split('')
-   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
 
-   // console.log(alphabet);
-   let count = 0;
-   let uppCase = 1;
+  return checkUpperCase(s)
 
-  for (var i = 0; i < splitString.length; i++) {
-    count+=1
-    if(alphabet.includes(splitString[i]) || ){
-      console.log(splitString[i])
-      uppCase+=1
-    }
-
-
-  }
-  return uppCase
-
-   // console.log(upperCaseSplit);
 }
 
-console.log(typist("aaAA"));
-// console.log(typist("A"));
+// console.log(typist("Aa"));
+console.log(checkLowerCase("AbcdeB"));
