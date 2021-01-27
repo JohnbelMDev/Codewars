@@ -2,8 +2,8 @@ function wordCount(str) {
 
   //your code here
 
-  return str.split(' ')
+  return str.trim().split(' ').length
 
 }
 
-console.log(wordCount(' Toto, I've got a feeling we're not in Kansas anymore.'));
+console.log(wordCount('May the force be with you. '));
