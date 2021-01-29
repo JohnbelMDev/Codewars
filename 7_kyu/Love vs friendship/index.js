@@ -20,9 +20,6 @@ function wordsToMarks(string){
   }
   return total
 
-
-
-
 }
 
 
