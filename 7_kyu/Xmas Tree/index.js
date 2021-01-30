@@ -29,6 +29,15 @@
 // n could be one input and that input would be the size
 
 
+// spreadsheet
+  // n represent the size
+  // row represent the amount of row there is in the tree
+  // amount of hash represent the amount of hash in each rows
+  // underscore represent amount of underscore there is each side and they are even
+  // the total width is 9 which always remains the same
+  // the left underscrore represent the amout which is the same as the right side
+
+
 
 
 // XMasTree(3) will result in:
@@ -50,22 +59,47 @@
 //  w = n * 2 - 1 // <- formula is
 
  function xMasTreeRow(height, row){
+   // console.log(height,row);
+   // width represent each side
+   if (height < row){
+     return 'Error'
+   }
     const width = (height * 2) - 1
+
+    // hasmount for each sides
     const hashAmount = row * 2  - 1
+    // underscore represent for each sides
+
+    // // __#####__              3
     const underscore = width - hashAmount
 
- }
+    const divideTotalSide = underscore / 2
 
+    const hastCharacter = '#'.repeat(hashAmount)
+    const underScorecharater = '_'.repeat(divideTotalSide)
+    const conCatAll = underScorecharater + hastCharacter + underScorecharater
+    return conCatAll
+
+
+ }
+// console.log(xMasTreeRow(5,5));
 
 
 
 function xMasTree(n){
    //complete this code
-   let charaters = []
-   for (let i = 0; i <n; i++){
-        charaters.push('#')
+   let charaters = [];
+   let first;
+   let answer;
+   for (let i = 1; i <= n; i++){
+
+        charaters.push(xMasTreeRow(n,i))
+
    }
+   first = xMasTreeRow(n,1)
+   // answer = [first,first]
+   charaters.push(first,first)
    return charaters
 }
 
-console.log(xMasTree(2));
+console.log(xMasTree(5));
