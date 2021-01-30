@@ -3,26 +3,34 @@
 
 
 
-function pattern(n){
- var output = "*";
+function pattern(n) {
+  var output = "*";
   //being coder
-  let temp = []
+  let temp
   let last = []
-  let num1 =1
-  let answer = []
-  let i =1
-    for (i; i <=n; i++){
-      // temp.push(i)
-      temp = output.repeat(i-1)
-      i * 1
-     // answer.push(num1,temp,i)
-answer.push([num1,temp,i])
-     // console.log(answer);
+  let num1 = 1
+  let answer = '';
+  let i = 1
+  for (i; i <= n; i++) {
+    temp = output.repeat(i - 1)
+    i * 1
+  if (i === 1){
+    temp += 'j'
+  }
+  else {
+   temp += i
+  }
+  if(i==n){
+    temp +=''
+  }
+  else {
+    temp +='\n'
+  }
+temp = num1 + temp
+    answer += temp
 
-    }
-    console.log(answer);
-
- // returnconsole.log(i,output,i); output;
+  }
+  return answer
 }
 
-console.log(pattern(3));
+console.log(pattern(4));
