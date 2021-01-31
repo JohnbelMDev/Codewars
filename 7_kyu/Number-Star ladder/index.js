@@ -15,7 +15,7 @@ function pattern(n) {
     temp = output.repeat(i - 1)
     i * 1
   if (i === 1){
-    temp += 'j'
+    temp += ''
   }
   else {
    temp += i
