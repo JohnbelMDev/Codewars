@@ -1,4 +1,4 @@
-function frequency(array,limit) {
+function deleteNth(array,limit) {
   let object = {}
   let num
   let deleteOccurence = []
@@ -33,7 +33,7 @@ function frequency(array,limit) {
 console.log(frequency([1,1,1,2,3,4,1],2));
 
 
-// 
+//
 
 
 
