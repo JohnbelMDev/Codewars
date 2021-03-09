@@ -1,5 +1,5 @@
 function greet (name, owner) {
-  // Add code here
+  // base case
   if (name === owner){
     return 'Hello boss'
   }
