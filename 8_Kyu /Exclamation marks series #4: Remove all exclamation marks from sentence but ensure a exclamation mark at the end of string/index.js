@@ -1,5 +1,5 @@
 function remove(s) {
-  //coding and coding....
+
   let removeExclamationPoin = s.split("!").join('')
   let array = []
   array.push(removeExclamationPoin)
@@ -8,5 +8,3 @@ function remove(s) {
   return answer
 
 }
-
-console.log(remove('Hi!!!'));
