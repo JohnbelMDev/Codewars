@@ -10,7 +10,6 @@ function datingRange(age){
      let ageMin = Math.floor((age / 2) + 7)
      let ageMax = Math.floor((age - 7) * 2)
      let array = [ageMin,ageMax]
-     // console.dir(ageMax.toString());
      let splitString = array.join('-')
      return splitString
    }
