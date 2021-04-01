@@ -1,9 +1,7 @@
-function sumNumbers(a) {
+function sumNumbers(...arg) {
   // your code here
-  if( typeof a === 'number'){
-    return s
-  }
-  return 0
-}
+  // console.log(arg);
+  return [...arg].filter(Number).reduce((a,b) => a + b, 0)
 
-console.log(sumNumbers('1'));
+}
+console.log(sumNumbers(1,'3','4'));
