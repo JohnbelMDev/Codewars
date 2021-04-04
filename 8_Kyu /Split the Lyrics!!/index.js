@@ -1,5 +1,44 @@
-function lyricSplit(lyric) {
-  return lyric.split(' ')
-}
+let arrray = [
+  {
+    id:933,
+    name:'Octavia',
+    age:23,
+    haircolor:'black',
+    gender:'male'
 
-console.log(lyricSplit("I know you still think about the times we had"));
+
+  }
+
+  {
+    id:933,
+    name:'Octavia',
+    age:23,
+    haircolor:'black',
+    gender:'male'
+
+
+  }
+]
+
+
+// let arrray = [
+//   {
+//     id:933,
+//     name:'Octavia',
+//     age:23,
+//     haircolor:'black',
+//     gender:'male'
+//
+//
+//   }
+//
+//   {
+//     id:933,
+//     person:{
+//       name:'Fiona',
+//       age:23,
+//       haircolor:'black',
+//       gender:'female'
+//     }
+// }
+// ]
