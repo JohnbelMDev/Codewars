@@ -33,7 +33,7 @@ function objectToArray(obj){
 
              if(!isNaN(propertie[i])){ //this means it is a number
                answer.push(parseInt(propertie[i]))
-               // console.log(answer);
+               // console.l og(answer);
            }
            else {
              answer.push((propertie[i]))

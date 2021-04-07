@@ -1,6 +1,5 @@
 function letterCount(s){
   //your code here
-   let splitString = s.split('')
    let newStringArray = []
    let uniqueObject = {}
    for (var i = 0; i < s.length; i++) {
