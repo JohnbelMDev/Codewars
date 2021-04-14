@@ -1,5 +1,5 @@
 function isCosortAndSumnsecutive(...arr) {
-    // console.log(arr.sort())
+
     let sortEd = arr.sort()
     let a= [];
     let b= 0;
@@ -7,17 +7,16 @@ function isCosortAndSumnsecutive(...arr) {
     for(let i = 0; i < sortEd.length; i++){
         if(typeof sortEd[i] === 'string'){
             a.push(sortEd[i])
-            // console.log(a);
+        
         }
         else{
             b += sortEd[i]
         }
     }
-    // let split  = a.split('').join('')
-    // array = [a,b]
+
    a.push(b)
    return a;
-    // console.log(a);
+
   
   }
   
