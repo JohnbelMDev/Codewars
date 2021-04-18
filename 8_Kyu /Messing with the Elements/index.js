@@ -1,4 +1,4 @@
-// taking an array as my parameter 
+// taking an array as my parameter
 //returning arr1 with the first element from the second array
 
 
