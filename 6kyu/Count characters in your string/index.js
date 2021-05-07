@@ -1,5 +1,6 @@
 function count (string) {
   // The function code should be here
+  // create an empty object
   let object = {};
 
      for(let i = 0;  i < string.length; i++){
