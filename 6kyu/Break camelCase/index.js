@@ -1,4 +1,4 @@
-
+// toCamelCase
 function toCamelCase(string) {
 
     let stringSplitbyDashed = string.split('')
