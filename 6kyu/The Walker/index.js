@@ -5,10 +5,27 @@
 // AB is the line in the graph
 // AB is the line in the graph
 
-// learn about measurements
-// minutes and angles
-//
+// first part will be to calucate toc and CO
+// non trivial
+//convert minutes to
 
+// 1
+  // calculate TOC
+// 2
+   // convert toc to degree,minutes, and second
+// 3
+// return toc in minutes
+// 4
+  // return number of seconds in toc
+
+
+
+//ask them specific question to someone
+
+
+//start reading from top to bottom
+//read the problem to understand the sentence
+// 
 function solve(a, b, c, alpha, beta, gamma) {
     // your code
 }
