@@ -1,3 +1,4 @@
+// prime number
 var primeArray = function(n) {
   var primeArray = [], sieve = [], i, j;
   for (i = 2; i <= n; ++i) {
