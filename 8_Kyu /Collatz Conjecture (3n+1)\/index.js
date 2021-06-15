@@ -1,3 +1,4 @@
+// codewars
 var hotpo = function(n){
   let step = 0
   if(n == 1){
