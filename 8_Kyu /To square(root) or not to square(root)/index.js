@@ -20,7 +20,7 @@ let squareOrSquareRoot = function (array) {
 }
 
 let isSquare = function (n) {
-  if(n > 0 && Math.sqrt(n) % 1 === 0 ) return true
+  if(Math.sqrt(n) % 1 === 0 ) return true
   return false
 };
 console.log(squareOrSquareRoot([4,3,9,7,2,1]));
