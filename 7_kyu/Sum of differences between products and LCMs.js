@@ -25,18 +25,24 @@
         //create a variable call differences with an empty array
         //for each arrays [[2,3],[4,2]] => get each array [2,3]
               // create a variable call product = array[0] * array[1]
+              // create a multiplication table [2,3] => example //multiples of 2:2,4,6,8,10,12
+                                                                //multiples of 3:3,6,9
+              //how do I know if i have enough multiples and how do I know when to stop.
+                  //what are the steps that I need to find lcm of two numbers
+                    //
+
               // create a variable call lcm and store the lcm
               // get the difference of the lcm and  the product 6,5,12
               //push the difference into the differences array
         // sum the differences
 
-// 
+//
 function sumDifferencesBetweenProductsAndLCMs(pairs){
   //your code here
   let product = []
    for (var i = 0; i <= pairs[0].length; i++) {
      product.push((pairs[i].reduce((a,b) => a * b)))
-     // console.log(pairs[i].reduce((a,b) => a * b));
+
    }
    console.log(product);
 }
