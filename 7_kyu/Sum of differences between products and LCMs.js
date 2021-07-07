@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/56e56756404bb1c950000992
 // Params: Taking in two a 2d array with pairs
 // return the result comparared with product and lcm
 
@@ -36,16 +37,64 @@
               //push the difference into the differences array
         // sum the differences
 
-//
+
 function sumDifferencesBetweenProductsAndLCMs(pairs){
   //your code here
   let product = []
-   for (var i = 0; i <= pairs[0].length; i++) {
+  // [[],[],[],[]]
+  //  [3,4] <== length of pairs[0] is 2
+  //  [2,3] <==
+   for (var i = 0; i < pairs.length; i++) {
+     console.log('pairs',pairs,i);
      product.push((pairs[i].reduce((a,b) => a * b)))
 
    }
-   console.log(product);
+   // console.log();
+   // console.log('',product);
+   let num,x,y;
+   let lc = []
+   for (var i = 0; i < pairs.length; i++) {
+     num = pairs[i]
+     x = num[0]
+     y = num[1]
+     lc.push(lcm(x,y))
+
+
+   }
+   console.log('test',product,lc);
+   let result = [];
+     for (var i = 0; i < product.length; i++) {
+       result.push((product[i] - lc[i]))
+     }
+      // let result;
+      // result = (product[0] - lc[0]) + (product[1] - lc[1]) + (product[2] - lc[2])
+  return result.reduce((a,b) => a + b)
 }
 
-console.log(sumDifferencesBetweenProductsAndLCMs([[15,18], [4,5], [12,60]]
-));
+
+const lcm = (a, b) => {
+  // console.log(a,b);
+   let min = Math.min(a, b);
+   // console.log('min',min);
+   let answer;
+   while(min >= 2){
+     // console.log('min while',min);
+     // console.log(min);
+      if(a % min === 0 && b % min === 0){
+        // console.log('a and b',a ,'',b,min);
+        answer = (a*b)/min;
+        // console.log('min',min);
+        // console.log('answer',answer);
+         return answer
+      };
+      min--;
+   };
+   let final;
+      final = (a*b);
+      // console.log('final',final);
+   return final
+};
+
+// console.log(sumDifferencesBetweenProductsAndLCMs([[15,18], [4,5], [12,60]]
+// ));
+console.log(sumDifferencesBetweenProductsAndLCMs([[135, 9317]]));
