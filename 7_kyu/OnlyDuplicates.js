@@ -10,6 +10,7 @@ function onlyDuplicates(str) {
        for (var z = 0; z < str.length; z++) {
          if(unique[i] === str[z]){
            count++
+           // console.log('count',counts);
            if(count > 1){
              answer+=str[z]
            }
