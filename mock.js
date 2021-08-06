@@ -7,3 +7,7 @@
 // declare
 // have a condition that will check the wheter or not 23, and 45 is in the array
 // increment each time the numbers are shown
+
+
+let string = 'hello i'
+console.log(string.split(' '));
