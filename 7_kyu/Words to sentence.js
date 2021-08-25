@@ -1,7 +1,6 @@
 // params: taken an array
 // returning a string of words separate by spaces
-// ["I","Love","Cake"] => I love Cake
-
+// ["I","Love","cake"] => I love cake
 
 function wordsToSentence(words) {
   return words.join(' ');
